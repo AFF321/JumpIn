@@ -1,4 +1,4 @@
-   <h1 class="page-title" id="event-title">Create Event</h1>
+ <h1 class="page-title" id="event-title">Create Event</h1>
     <section class="event-form">
       <form class="row g-3">
         <div class="col-md-12">
@@ -7,12 +7,16 @@
         <div class="col-md-12">
           <input type="text" class="form-control" id="inputHostName" placeholder="Host Name">
         </div>
+        <div class="col-md-12">
+          <label for="eventDate">Event Date</label>
+          <input type="date" id="eventDate" name="event date">
+      </div>
         <div class="col-md-6">
           <label for="inputEvent" class="form-label">Type of Event</label>
           <select id="inputEvent" class="form-select">
             <option selected>Choose...</option>
             <option>Sports</option>
-            <option>Arts and Crafts</option>
+            <option>Arts & Cratfs</option>
             <option>Music</option>
             <option>Dining</option>
           </select>
@@ -21,6 +25,7 @@
           <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
           <label for="floatingTextarea2">Tell Us About Your Event!</label>
         </div>
+        
         <div class="col-6">
           <label for="inputLocationName" class="form-label">Where is your Event taking place?</label>
           <input type="text" class="form-control" id="inputLocationName" placeholder="Location Name">
@@ -34,13 +39,67 @@
         <div class="col-md-4">
           <select id="inputState" class="form-select" placeholder="State">
             <option selected>Choose...</option>
-            <option>...</option>
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>Arizona</option>
+            <option >Arkansas</option>
+            <option >California</option>
+            <option >Colorado</option>
+            <option >Connecticut</option>
+            <option >Delaware</option>
+            <option >Florida</option>
+            <option >Georgia</option>
+            <option >Hawaii</option>
+            <option >Idaho</option>
+            <option >Illinios</option>
+            <option >Indiana</option>
+            <option >Iowa</option>
+            <option >Kansas</option>
+            <option >Kentucky</option>
+            <option >Louisiana</option>
+            <option >Maine</option>
+            <option >Maryland</option>
+            <option >Massachusetts</option>
+            <option >Michigan</option>
+            <option >Minnesota</option>
+            <option >Mississippi</option>
+            <option >Missouri</option>
+            <option >Montana</option>
+            <option >Nebraska</option>
+            <option >Nevada</option>
+            <option >New Hampshire</option>
+            <option >New Jersey</option>
+            <option >New Mexico</option>
+            <option >New York</option>
+            <option >North Carolina</option>
+            <option >North Dakota</option>
+            <option >Ohio</option>
+            <option >Oklahoma</option>
+            <option >Oregon</option>
+            <option >Pennsylvania</option>
+            <option >Rhode Island</option>
+            <option >South Carolina</option>
+            <option >South Dakota</option>
+            <option >Tennesee</option>
+            <option >Texas</option>
+            <option >Utah</option>
+            <option >Vermont</option>
+            <option >Virginia</option>
+            <option >Washington</option>
+            <option >West Virginia</option>
+            <option >Wisconsin</option>
+            <option >Wyoming</option>
           </select>
         </div>
         <div class="col-md-2">
           <input type="text" class="form-control" id="inputZip" placeholder="Zip Code">
         </div>
-        
+  
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Who would you like to invite?</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter all Email Addresses ex. c@c.com, j@j.com"></textarea>
+        </div>
+
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
