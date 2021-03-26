@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User,Project } = require('../../models');
 
-router.post('/', async (req, res) => {
+router.post('/event', async (req, res) => {
   try {
     const newProject = await Project.create({
       ...req.body,
