@@ -87,3 +87,8 @@ body {
   background-color: white;
   padding: 25px;
 }
+#eventDate {
+  border: 1px solid #ced4da;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+}
