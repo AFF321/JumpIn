@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User,Event } = require('./../models');
+const { User,Event, Parti } = require('./../models');
 
 router.get('/',async (req,res) => {
     try{
@@ -43,7 +43,7 @@ router.get('/event/:id', async (req,res)=>{
 try{
 const eventData = await Event.findByPk(req.params.id,
   {include:
-      {model:User}
+      {model:User,model:Parti},
     }
   );
 const event = eventData.get({plain:true});
