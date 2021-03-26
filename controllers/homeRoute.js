@@ -21,7 +21,15 @@ router.get('/',async (req,res) => {
     res.render('login');
   });
 
-router.get('/view',(req,res)=>{
+router.get('/view', async (req,res)=>{
+  try {
+    const eventData = await Event.findAll();
+    const events = eventData.map(([event]) => event.get({plain:true}))
+    res.render("view",{events})
+  }catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
 
 });
 
