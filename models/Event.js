@@ -13,7 +13,7 @@ Event.init(
     },
     event_name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     host_name: {
       type: DataTypes.STRING,
@@ -21,7 +21,7 @@ Event.init(
     },
     type: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     description: {
       type: DataTypes.STRING,
@@ -32,19 +32,19 @@ Event.init(
     },
     event_city: {
       type: DataTypes.STRING,
-      allowNull:false,
+      allowNull:true,
     },
     event_state: {
       type: DataTypes.STRING,
-      allowNull:false,
+      allowNull:true,
     },
     event_zip :{
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     date_created: {
       type: DataTypes.DATE,
-      allowNull: false,
+      allowNull: true,
       defaultValue: DataTypes.NOW,
     },
 
