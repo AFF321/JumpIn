@@ -38,7 +38,7 @@ Event.init(
       type: DataTypes.STRING,
       allowNull:false,
     },
-    event_zip {
+    event_zip :{
       type: DataTypes.INTEGER,
       allowNull: false,
     },
