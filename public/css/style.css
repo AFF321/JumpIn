@@ -40,5 +40,50 @@ body {
 .nav-links {
   color: rgb(221, 218, 218);
   text-decoration: none;
- 
+}
+
+.form-area {
+  display: flex;
+  background-color: rgb(155 211 205 / 62%);
+  border-left: 5px solid #1c3334;
+  border-right: 5px solid #1c3334;
+  padding: 50px;
+  justify-content: center;
+}
+.login-card {
+  margin: 15px;
+  padding: 15px;
+  color: rgb(221, 218, 218);
+  width: 50%;
+}
+.form-group {
+  padding: 20px;
+}
+
+.page-title {
+  text-align: center;
+  background-color: rgb(214 179 23);
+  height: 25%;
+  margin-bottom: 0;
+}
+
+.btn {
+  background-color: #1c3334;
+}
+.form-input {
+  border-radius: 3px;
+  border: 1px solid #1c3334;
+}
+.form {
+  background-color: white;
+  color: black;
+}
+
+#event-title {
+  padding: 35px;
+    color: white;
+}
+.event-form {
+  background-color: white;
+  padding: 25px;
 }
