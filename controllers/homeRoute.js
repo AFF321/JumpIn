@@ -10,21 +10,15 @@ router.get('/',async (req,res) => {
     res.status(500).json(err);
   }
   });
-  
-  router.get('/:id', async (req,res) => {
-    
-    try {
-      const projectData = await Event.findByPk(req.params.id);
-      const project = projectData.get({plain: true});
-      console.log(project);
 
-      res.render('view', {project});
-        
-      } catch (err) {
-        console.log(err);
-        res.status(500).json(err);
-      }
+  router.get('/login', (req, res) => {
+    
+  
+    console.log('hi')
+    res.render('login');
   });
+  
+  
   router.get('/login', (req, res) => {
     // if (req.session.loggedIn) {
     //   res.redirect('/');
@@ -34,7 +28,15 @@ router.get('/',async (req,res) => {
     res.render('login');
   });
 
-router.get('/view',(req,res)=>{
+router.get('/view', async (req,res)=>{
+  try {
+    const eventData = await Event.findAll();
+    const events = eventData.map(([event]) => event.get({plain:true}))
+    res.render("view",{events})
+  }catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
 
 });
 
