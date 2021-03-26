@@ -2,9 +2,10 @@
 
 <textarea>
 
-{{#each event as |event|}}
-{{> res.render.event-details}}
+{{#each events as |event|}}
+{{> event-details}}
 {{/each}}
+ 
 </textarea>
 <button type ="submit"></button>
 

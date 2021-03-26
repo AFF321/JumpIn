@@ -1,19 +1,10 @@
 const router = require('express').Router();
-const { User,Project } = require('./../models');
+const { User,Event } = require('./../models');
 
 router.get('/',async (req,res) => {
     try{
-      const projectData = await Project.findAll();
-  
-      const projects = projectData.map(([project]) =>
-        project.get({ plain: true })
-       
-      );
     
-      res.render('homepage', {
-        projects,
-     
-    }); 
+      res.render('homepage', {}); 
   } catch(err){
     console.log(err);
     res.status(500).json(err);
@@ -27,21 +18,41 @@ router.get('/',async (req,res) => {
     res.render('login');
   });
   
-  router.get('/:id', async (req,res) => {
-    
-    try {
-      const projectData = await Project.findByPk(req.params.id)
-      const project = projectData.get({plain: true});
-      console.log(project);
+  
+  router.get('/login', (req, res) => {
+    // if (req.session.loggedIn) {
+    //   res.redirect('/');
+    //   return;
+    // }
+    console.log('hi')
+    res.render('login');
+  });
 
-      res.render('project', {project});
-        
-      } catch (err) {
-        console.log(err);
-        res.status(500).json(err);
-      }
-  })
+router.get('/view', async (req,res)=>{
+  try {
+    const eventData = await Event.findAll();
+    const events = eventData.map(([event]) => event.get({plain:true}))
+    res.render("view",{events})
+  }catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+
+});
 
 
+router.get('/event/:id', async (req,res)=>{
+try{
+const eventData = await Event.findByPk(req.params.id,
+  {include:
+      {model:User}
+    }
+  );
+const event = eventData.get({plain:true});
+console.log(event)
+res.render('event',{event})
+}catch{
 
+}
+})
   module.exports = router;
