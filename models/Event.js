@@ -7,7 +7,7 @@ Event.init(
   {
     event_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       primaryKey: true,
       autoIncrement: true,
     },
@@ -38,7 +38,7 @@ Event.init(
       type: DataTypes.STRING,
       allowNull:true,
     },
-    event_zip :{
+    event_zip: {
       type: DataTypes.INTEGER,
       allowNull: true,
     },
@@ -58,7 +58,7 @@ Event.init(
   },
   {
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: 'event',

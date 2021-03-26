@@ -1,0 +1,12 @@
+<section class="event">
+  <div class="event-details">
+    <h3>{{event.event_name}}</h3>
+    <p>By: {{event.host_name}}</p>
+    <p>{{event.description}}</p>
+<ol>
+{{#each event.partis}}
+<li> {{event.partis.user_name}}</li>
+{{/each}}
+</ol>
+  </div>
+</section>

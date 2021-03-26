@@ -25,6 +25,7 @@ const seedDatabase = async () => {
     await Parti.create({
       ...parti,
       user_id: users[Math.floor(Math.random() * users.length)].user_id,
+      user_name:users[Math.floor(Math.random() * users.length)].name
     });
   }
 

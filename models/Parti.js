@@ -12,6 +12,9 @@ Parti.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        user_name:{
+            type: DataTypes.STRING,
+         allowNull:false},
         user_id:{
             type: DataTypes.INTEGER,
             references: {
