@@ -1,14 +1,29 @@
 [
-  {
-    "title": "Wednesday Workout in the Park",
-    "description": "A full body low impact cardio workout where we can all move our bodies and enjoy nature"
+  { "event_name": "workout wednesday" ,
+    "host_name": "bobby hill",
+    "type": "outdoors",
+    "description": "A full body low impact cardio workout where we can all move our bodies and enjoy nature",
+    "event_date": "12-01-2021",
+    "event_state": "ca",
+    "event_zip": "91304"
+     
   },
-  {
-    "title": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
+  { "event_name": "workout wednesday" ,
+    "host_name": "bobby hill",
+    "type": "outdoors",
+    "description": "A full body low impact cardio workout where we can all move our bodies and enjoy nature",
+    "event_date": "12-01-2021",
+    "event_state": "ca",
+    "event_zip": "91304"
+     
   },
-  {
-    "title": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
+  { "event_name": "workout wednesday" ,
+    "host_name": "bobby hill",
+    "type": "outdoors",
+    "description": "A full body low impact cardio workout where we can all move our bodies and enjoy nature",
+    "event_date": "12-01-2021",
+    "event_state": "ca",
+    "event_zip": "91304"
+     
   }
 ]

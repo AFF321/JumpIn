@@ -24,7 +24,7 @@ router.get('/',async (req,res) => {
 router.get('/view', async (req,res)=>{
   try {
     const eventData = await Event.findAll();
-    const events = eventData.map(([event]) => event.get({plain:true}))
+    const events = eventData.map((event) => event.get({plain:true}))
     res.render("view",{events})
   }catch (err) {
     console.log(err);
