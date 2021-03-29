@@ -27,7 +27,7 @@ Event.init(
       type: DataTypes.STRING,
     },
     event_date: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DATE,
       allowNull: true,
     },
     event_address: {
