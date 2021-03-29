@@ -33,6 +33,14 @@ router.get('/view', async (req,res)=>{
 
 });
 
+router.get('/create',async (req,res) => {
+  try{
+    res.render("create", {}); 
+} catch(err){
+  console.log(err);
+  res.status(500).json(err);
+}
+});
 
 router.get('/event/:id', async (req,res)=>{
 try{
