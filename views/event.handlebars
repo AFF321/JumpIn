@@ -1,12 +1,16 @@
 <section class="event">
   <div class="event-details">
+    <section id="event-title">
     <h3>{{event.event_name}}</h3>
     <p>By: {{event.host_name}}</p>
     <p>{{event.description}}</p>
+    </section>
+<section class="container"></section>
 <ol>
-{{#each event.partis}}
-<li> {{event.partis.user_name}}</li>
+{{#each event.partis as |parti|}}
+<li> {{parti.user_name}}</li>
 {{/each}}
 </ol>
+</section>
   </div>
 </section>
