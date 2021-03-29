@@ -14,6 +14,24 @@ router.post('/event', async (req, res) => {
   }
 });
 
+router.get('/', async (req,res) => {
+    
+  try {
+    const eventData = await Event.findAll();
+    const events = eventData.map((event) =>
+    event.get({ plain: true })
+    );
+
+    res.render('view', {events}); 
+if (!eventData){
+  res.status(404).json({message:'no event found'})
+}
+
+    } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
+    };
+});
 router.get('/:id', async (req,res) => {
     
   try {
@@ -29,6 +47,7 @@ if (!eventData){
       res.status(500).json(err);
     };
 });
+
 
 router.delete('/:id', async (req, res) => {
   try {
