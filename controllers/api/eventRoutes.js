@@ -1,19 +1,37 @@
 const router = require('express').Router();
-const { User,Project } = require('../../models');
+const { User,Event } = require('../../models');
 
 router.post('/event', async (req, res) => {
   try {
-    const newProject = await Project.create({
+    const newEvent = await Event.create({
       ...req.body,
       user_id: req.session.user_id,
     });
 
-    res.status(200).json(newProject);
+    res.status(200).json(newEvent);
   } catch (err) {
     res.status(400).json(err);
   }
 });
 
+router.get('/', async (req,res) => {
+    
+  try {
+    const eventData = await Event.findAll();
+    const events = eventData.map((event) =>
+    event.get({ plain: true })
+    );
+
+    res.render('view', {events}); 
+if (!eventData){
+  res.status(404).json({message:'no event found'})
+}
+
+    } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
+    };
+});
 router.get('/:id', async (req,res) => {
     
   try {
@@ -30,21 +48,22 @@ if (!eventData){
     };
 });
 
+
 router.delete('/:id', async (req, res) => {
   try {
-    const projectData = await Project.destroy({
+    const eventData = await Event.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
       },
     });
 
-    if (!projectData) {
+    if (!eventData) {
       res.status(404).json({ message: 'No project found with this id!' });
       return;
     }
 
-    res.status(200).json(projectData);
+    res.status(200).json(eventData);
   } catch (err) {
     res.status(500).json(err);
   }

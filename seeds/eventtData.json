@@ -1,14 +1,46 @@
-[
+
   {
-    "title": "Wednesday Workout in the Park",
-    "description": "A full body low impact cardio workout where we can all move our bodies and enjoy nature"
+    "event_name": "Wednesday Workout in the Park",
+    "host_name": "Sal",
+    "type": "Sport",
+    "description": "A full body low impact cardio workout where we can all move our bodies and enjoy nature",
+    "event_date": "03272021",
+    "event_city": "Dallas",
+    "event_state": "Texas",
+    "event_zip": "75201",
+    "user_id": "1"
   },
   {
-    "title": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
+    "event_name": "Mindful Poetry Gathering",
+    "host_name": "Lernantino",
+    "type": "Arts & Cratfs",
+    "description": "Celebrate the art of poetry with this gathering, a chance to listen to a selection from On Being's Poetry Unbound",
+    "event_date": "04202021",
+    "event_city": "San Francisco",
+    "event_state": "California",
+    "event_zip": "94102",
+    "user_id": "2"
   },
   {
-    "title": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
+    "event_name": "Ice & Alchemy",
+    "host_name": "Amiko",
+    "type": "Dining",
+    "description": "Virtual Mixology classes",
+    "event_date": "04102021",
+    "event_city": "Atlanta",
+    "event_state": "Georgia",
+    "event_zip": "30030",
+    "user_id": "3"
+  },
+  {
+    "event_name": "Pups in the Park",
+    "host_name": "Edwin",
+    "type": "Recreation",
+    "description": "Socially distant gathering for dogs and their owners at Brooklyn Bridge Park Dog Run",
+    "event_date": "05152021",
+    "event_city": "Brooklyn",
+    "event_state": "New York",
+    "event_zip": "11201",
+    "user_id": "4"
   }
 ]
