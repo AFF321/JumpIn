@@ -96,3 +96,6 @@ body {
   padding: .375rem .75rem;
   border-radius: .25rem;
 }
+.card-img-top {
+  width: 18rem;
+}
