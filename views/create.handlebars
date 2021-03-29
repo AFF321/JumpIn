@@ -13,7 +13,7 @@
       </div>
         <div class="col-md-6">
           <label for="inputEvent" class="form-label">Type of Event</label>
-          <select id="inputEvent" class="form-select">
+          <select id="inputEventType" class="form-select">
             <option selected>Choose...</option>
             <option>Sports</option>
             <option>Arts & Cratfs</option>
@@ -23,7 +23,7 @@
           </select>
         </div>
         <div class="form-floating">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <textarea class="form-control" placeholder="Leave a comment here" id="eventDescription" style="height: 100px"></textarea>
           <label for="floatingTextarea2">Tell Us About Your Event!</label>
         </div>
         
@@ -32,7 +32,7 @@
           <input type="text" class="form-control" id="inputLocationName" placeholder="Location Name">
         </div>
         <div class="col-12">
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Enter Street Address">
+          <input type="text" class="form-control" id="inputStreetAddress" placeholder="Enter Street Address">
         </div>
         <div class="col-md-6">
           <input type="text" class="form-control" id="inputCity" placeholder="City">
@@ -98,12 +98,14 @@
   
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Who would you like to invite?</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter all Email Addresses ex. c@c.com, j@j.com"></textarea>
+          <textarea class="form-control" id="inputEmails" rows="3" placeholder="Enter all Email Addresses ex. c@c.com, j@j.com"></textarea>
         </div>
 
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
+
       <!-- after event is created need to give them the link to share -->
     </section>
+    <script src="./js/create.js"></script>
