@@ -25,7 +25,7 @@ body {
 
 .card-body {
   background-color: #1c3334;
-  text-align: center;
+  align-items: center;
   color: rgb(221, 218, 218);
 }
 .card {
@@ -40,6 +40,10 @@ body {
 .nav-links {
   color: rgb(221, 218, 218);
   text-decoration: none;
+}
+.join{
+  align-items: flex-end;
+ margin-left:80%;
 }
 
 .form-area {
@@ -92,6 +96,7 @@ body {
   padding: .375rem .75rem;
   border-radius: .25rem;
 }
+
 button{
   width: 60px;
   display: flex;
@@ -105,4 +110,8 @@ h1{
   justify-content: center;
   color: white;
    
+
+.card-img-top {
+  width: 18rem;
+
 }

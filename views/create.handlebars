@@ -1,3 +1,5 @@
+
+{{#if logged_in}}
  <h1 class="page-title" id="event-title">Create Event</h1>
     <section class="event-form">
       <form class="row g-3">
@@ -108,4 +110,9 @@
 
       <!-- after event is created need to give them the link to share -->
     </section>
+    {{else}}
+    <section>
+      <p>Please <a href='/login'>Sign In</a></p>
+    </section>
+    {{/if}}
     {{!-- <script src="./js/create.js"></script> --}}
