@@ -110,3 +110,9 @@ h1{
   color: white;
    
 }
+.center{
+  text-align: center;
+}
+a .center{
+  text-decoration: none;
+}
