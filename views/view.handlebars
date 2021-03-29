@@ -1,9 +1,15 @@
 <h1>View Events</h1>
 
-<div class ="card-body card center">
+
+<div class="container" style="width: 18rem;">
 {{#each events as |event|}}
 {{> view-details}}
 {{/each}}
-<a href="/" type ="submit" style="background-color: darkorange;">return</a>
- </div>   
+  <ul class="list-group list-group-flush">
+    <li class={{event}}></li>
+    <li class={{event}}></li>
+    <li class={{event}}></li>
+    <a href="/" type ="submit" style="background-color: darkorange;">return home</a>
+  </ul>
+</div>
 
