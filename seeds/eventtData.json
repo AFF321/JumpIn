@@ -4,7 +4,10 @@
     "host_name": "Sal",
     "type": "Sport",
     "description": "A full body low impact cardio workout where we can all move our bodies and enjoy nature",
-    "event_date": "03-27-2021",
+
+    "event_date": "2021-03-27",
+    "event_address":"5431 washington blv.",
+
     "event_city": "Dallas",
     "event_state": "Texas",
     "event_zip": "75201",
@@ -15,7 +18,10 @@
     "host_name": "Lernantino",
     "type": "Arts & Cratfs",
     "description": "Celebrate the art of poetry with this gathering, a chance to listen to a selection from On Being's Poetry Unbound",
-    "event_date": "04-20-2021",
+
+    "event_date": "2021-04-20",
+    "event_address":"6209 albatros rd.",
+
     "event_city": "San Francisco",
     "event_state": "California",
     "event_zip": "94102",
@@ -26,7 +32,10 @@
     "host_name": "Amiko",
     "type": "Dining",
     "description": "Virtual Mixology classes",
-    "event_date": "04-10-2021",
+
+    "event_date": "2021-04-10",
+    "event_address":"9017 inkling way",
+
     "event_city": "Atlanta",
     "event_state": "Georgia",
     "event_zip": "30030",
@@ -37,7 +46,10 @@
     "host_name": "Edwin",
     "type": "Recreation",
     "description": "Socially distant gathering for dogs and their owners at Brooklyn Bridge Park Dog Run",
-    "event_date": "05-15-2021",
+
+    "event_date": "2021-05-15",
+    "event_address":"8041 ighteous st.",
+
     "event_city": "Brooklyn",
     "event_state": "New York",
     "event_zip": "11201",

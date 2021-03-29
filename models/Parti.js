@@ -14,7 +14,7 @@ Parti.init(
         },
         user_name:{
             type: DataTypes.STRING,
-         allowNull:false},
+         allowNull:true},
         user_id:{
             type: DataTypes.INTEGER,
             references: {
