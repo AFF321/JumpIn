@@ -12,9 +12,9 @@ $(document).ready(function () {
     let eventZip = $('#inputZip');
     let inviteEmails = $('#inputEmails');
 
+ 
 
 
-    
 })
 
 
