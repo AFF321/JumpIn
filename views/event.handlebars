@@ -1,9 +1,10 @@
-<section class="event">
+<section class="event card card-body">
   <div class="event-details">
     <section id="event-title">
     <h3>{{event.event_name}}</h3>
     <p>By: {{event.host_name}}</p>
-    <p>Where:</p>
+    <p>Where:{{event.event_zip}} {{event.event_address}} , {{event.event_city}} ,{{event.evenmt_state}}</p>
+    <p>when: {{event.event_date}}</p>
     <p>{{event.description}}</p>
     </section>
 <section class="container"></section>
@@ -12,6 +13,12 @@
 <li> {{parti.user_name}}</li>
 {{/each}}
 </ol>
+
+<button class='btn btn-primary join'id="joinevent" type="submit">want to join? click here!</button> 
+
 </section>
   </div>
 </section>
+
+
+<script src="/js/joinevent.js"></script>
