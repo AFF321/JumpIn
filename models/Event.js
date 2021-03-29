@@ -30,6 +30,10 @@ Event.init(
       type: DataTypes.INTEGER,
       allowNull: true,
     },
+    event_address: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     event_city: {
       type: DataTypes.STRING,
       allowNull:true,
