@@ -110,8 +110,21 @@ h1{
   justify-content: center;
   color: white;
 }
+.center{
+  text-align: center;
+}
+a .center{
+  text-decoration: none;
+}
 
 .card-img-top {
   width: 18rem;
 
 }
+
+ul{
+  list-style-type:none ;
+}
+.card a header{
+  padding: 5px;
+} 

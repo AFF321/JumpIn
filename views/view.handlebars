@@ -1,11 +1,15 @@
 <h1>View Events</h1>
 
-<div class ="container">
+
+<div class="container" style="width: 18rem;">
 {{#each events as |event|}}
 {{> view-details}}
 {{/each}}
-<button type ="submit" style="background-color: darkorange;">return</button>
-
+  <ul class="list-group list-group-flush">
+    <li class={{event}}></li>
+    <li class={{event}}></li>
+    <li class={{event}}></li>
+    <a href="/" type ="submit" style="background-color: darkorange;">return home</a>
+  </ul>
 </div>
 
-<script src="/css/style.css"></script>
