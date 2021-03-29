@@ -22,7 +22,7 @@ router.get('/', async (req,res) => {
     event.get({ plain: true })
     );
 
-    res.render('view', {events}); 
+    res.status(200).json(events); 
 if (!eventData){
   res.status(404).json({message:'no event found'})
 }
