@@ -1,6 +1,6 @@
-<h1>View Events</h1>
 
-{{#if logged_in}}
+
+{{!-- {{#if logged_in}}
 <div class="container" style="width: 18rem;">
 {{#each events as |event|}}
 {{> view-details}}
@@ -14,6 +14,28 @@
 </div>
 {{else}}
 <p> Please  <a href="/login">  LogIn to view events </a></p>
+{{/if}} --}}
+
+{{#if logged_in}}
+<div class="card-body card" style="">
+    {{#each events as |event|}}
+{{> view-details}}
+{{/each}}
+  
+  <div class="card-body">
+    <h5 class="card-title">View events</h5>
+    
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class={{event}}></li>
+    <li class={{event}}></li>
+    <li class={{event}}></li>
+  </ul>
+  <div class="card-body">
+    <a href="/" class="card-link btn btn-primary">Return Home</a>
+    <a href="/create" class="card-link btn btn-primary">Create event</a>
+  </div>
+</div>
+{{else}}
+<p> Please  <a href="/login">  LogIn to view events </a></p>
 {{/if}}
-
-

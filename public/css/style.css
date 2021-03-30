@@ -158,3 +158,11 @@ ul{
   padding: 5px;
   background-color:darkgrey;
 } 
+
+.card{
+  flex-direction: column-reverse;
+  text-align: center;
+  background-color:ivory;
+  
+
+}
