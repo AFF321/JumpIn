@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User,Event } = require('../../models');
 
-router.post('/event', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const newEvent = await Event.create({
       ...req.body,
