@@ -13,10 +13,14 @@
 <li> {{parti.user_name}}</li>
 {{/each}}
 </ol>
+{{#if logged_in}}
 <form id="joinevent">
-  <textarea placeholder="enter name here" class="text join"></textarea>
-<button class='btn btn-primary join' type="submit">want to join? click here!</button> 
+  <input placeholder="enter name here" class="text  form-input join"></input>
+<button class='btn btn-primary join ' id="join-btn" type="submit">want to join? click here!</button> 
 </form>
+{{else}}
+<h1>Please <a href="/login"> LogIn to join event</a></h1>
+{{/if}}
 </section>
   </div>
 </section>
