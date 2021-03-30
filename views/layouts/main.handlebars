@@ -12,10 +12,26 @@
 <body>
  <main class="container">
   <div class="navbar">
-
+     {{#if logged_in}}
+      <div class="main-navs">
+    <a href="#" class="nav-links" id="logout">Logout</a>
+    </div>
+    {{else}}
+    <div class="main-navs">
     <a href="/login" class="nav-links">Login</a>
+    </div>
+    {{/if}}
+    <div class="main-navs">
+    <a href="/" class="nav-links">Homepage</a>
+    </div>
+    <div class="main-navs">
     <a href="/create" class="nav-links">Create</a>
+    </div>
+    <div class="main-navs">
     <a href="/view" class="nav-links">Explore</a>
+    </div>
+  
+    <script src="/js/logout.js"></script>
   </div>
   <section class="title">JumpIn</section>
   {{{body}}}

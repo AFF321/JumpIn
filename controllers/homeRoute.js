@@ -4,7 +4,7 @@ const { User,Event, Parti } = require('./../models');
 router.get('/',async (req,res) => {
     try{
     
-      res.render('homepage', {}); 
+      res.render('homepage', {logged_in:req.session.logged_in}); 
   } catch(err){
     console.log(err);
     res.status(500).json(err);
@@ -25,7 +25,7 @@ router.get('/view', async (req,res)=>{
   try {
     const eventData = await Event.findAll();
     const events = eventData.map((event) => event.get({plain:true}))
-    res.render("view",{events})
+    res.render("view",{events , logged_in:req.session.logged_in})
   }catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -51,7 +51,7 @@ const eventData = await Event.findByPk(req.params.id,
   );
 const event = eventData.get({plain:true});
 console.log(event)
-res.render('event',{event})
+res.render('event',{event,logged_in:req.session.logged_in})
 }catch{
 
 }
