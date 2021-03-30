@@ -37,7 +37,7 @@ body {
 .card {
   border: none;
   margin: 10px;
-  box-shadow: 4px 4px 4px;
+  
 }
 .navbar {
   display: flex;
@@ -163,15 +163,22 @@ ul{
   text-align: center;
   
 }
-.card a header{
+.card-2{
   padding: 5px;
-  background-color:darkgrey;
+  background-color: #1c3334;
+  border: none;
+  margin: 10px;
 } 
 
-.card{
-  flex-direction: column-reverse;
-  text-align: center;
-  background-color:ivory;
-  
+
+
+.card-body-3{
+  width: 300px;
+  margin-left: 400px;
+}
+
+.links{
+  text-decoration: none;
+  color:white;
 
 }

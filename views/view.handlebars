@@ -17,11 +17,11 @@
 {{/if}} --}}
 
 {{#if logged_in}}
-<div class="card-body card" style="">
-    {{#each events as |event|}}
+<div class="card-body card-body-3 card" style="">
+   <ol>{{#each events as |event|}}
 {{> view-details}}
 {{/each}}
-  
+   </ol> 
   <div class="card-body">
     <h5 class="card-title">View events</h5>
     
