@@ -160,17 +160,18 @@ a .center{
 
 ul{
   list-style-type:none ;
+  text-align: center;
+  
 }
 .card a header{
   padding: 5px;
+  background-color:darkgrey;
 } 
 
-.login-check {
-  display: flex;
-  font-size: 20px;
-  justify-content: center;
-}
+.card{
+  flex-direction: column-reverse;
+  text-align: center;
+  background-color:ivory;
+  
 
-.login-link {
-  background-color: rgb(214 179 23);
 }
