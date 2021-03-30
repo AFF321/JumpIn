@@ -124,7 +124,10 @@ a .center{
 
 ul{
   list-style-type:none ;
+  text-align: center;
+  
 }
 .card a header{
   padding: 5px;
+  background-color:darkgrey;
 } 
