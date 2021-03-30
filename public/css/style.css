@@ -31,6 +31,9 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+.card-body-2{
+  width: 1200px;
+}
 .card {
   border: none;
   margin: 10px;
@@ -58,11 +61,10 @@ body {
   background-color: #444141;
 }
 .join{
-  align-items: flex-end;
  margin-left:80%;
 }
 #join-btn{
-  width: 25%;
+  width: 200px;
 }
 .form-area {
   display: flex;
@@ -93,8 +95,12 @@ body {
   background-color: #1c3334;
 }
 .form-input {
+  width: 100%;
   border-radius: 3px;
   border: 1px solid #1c3334;
+}
+.form-input-2{
+  width: 300px;
 }
 .form {
   background-color: white;
