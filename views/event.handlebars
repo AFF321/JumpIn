@@ -1,4 +1,4 @@
-<section class="event card card-body">
+<section class="event card card-body card-body-2">
   <div class="event-details">
     <section id="event-title">
     <h3>{{event.event_name}}</h3>
@@ -15,11 +15,11 @@
 </ol>
 {{#if logged_in}}
 <form id="joinevent">
-  <input placeholder="enter name here" class="text  form-input join"></input>
+  <input placeholder="enter name here" class="text form-input-2 form-input join-btn join"></input>
 <button class='btn btn-primary join ' id="join-btn" type="submit">want to join? click here!</button> 
 </form>
 {{else}}
-<h1>Please <a href="/login"> LogIn to join event</a></h1>
+<p>Please <a href="/login"> LogIn to join event</a></p>
 {{/if}}
 </section>
   </div>
