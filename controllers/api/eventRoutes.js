@@ -37,7 +37,9 @@ router.post('/:id', async (req,res) => {
     
   try {
     const eventData = await Event.findByPk(req.params.id);
+    
     const events = eventData.get({ plain: true });
+    
     sendmail({
       from: 'JumpInno-reply@gmail.com',
       to: req.body.inviteEmails,
@@ -45,7 +47,7 @@ router.post('/:id', async (req,res) => {
       html: `<h1>You've Been Invited to An Event on JumpIn</h1>
       <a href="http://localhost:3001/event/${req.params.id}">
       <p>${events.event_name}</p>
-      <p>${events.event_host}</p>
+      <p>${events.host_name}</p>
       <p>${events.description}</p>
       <p>${events.event_date}</p>
       <p>${events.event_address}</p>
