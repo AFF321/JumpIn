@@ -16,7 +16,7 @@
         const inviteEmails = document.querySelector('#inputEmails').value.split(",");
 
         console.log(inviteEmails);
-        
+
         // if(!eventName){
         //     alert('Please fill out Event Name field')
         // } else {
@@ -85,20 +85,33 @@
 
         // console.log(inputs)
 
-        var response = await fetch('/api/event', {
+        fetch('/api/event', {
             method: 'POST',
             body: JSON.stringify(events),
             headers: { 'Content-Type': 'application/json' },
+          })
+          .then(function (response) {
+            console.log(response.status);
+            //  Conditional for the the response.status.
+            if (response.status !== 200) {
+              // Place the response.status on the page.
+              // responseText.textContent = response.status;
+            }
+            return response.json();
+          })
+          .then(function (data) {
+            const inviteEmails = document.querySelector('#inputEmails').value;
+        fetch(`api/event/${data.event_id}`, {
+            method: 'POST',
+            body: JSON.stringify({inviteEmails}), 
+            headers: {'Content-Type': 'application/json'}
+        }) 
+        .then(response => response.json());
+            // Make sure to look at the response in the console and read how 404 response is structured.
+            console.log(data);
           });
       
-          if (response.ok) {
-            alert('Your Event has been created!')
-          } else {
-              alert('failedddd')
-          }
     }
-
-   
     document.querySelector(".event-form").addEventListener("submit", createFormHandle)
 
 
