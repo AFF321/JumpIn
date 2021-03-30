@@ -109,7 +109,6 @@ h1{
   align-items: center;
   justify-content: center;
   color: white;
-   
 }
 .center{
   text-align: center;
@@ -117,6 +116,7 @@ h1{
 a .center{
   text-decoration: none;
 }
+
 .card-img-top {
   width: 18rem;
 

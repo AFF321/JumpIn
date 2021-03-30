@@ -1,12 +1,12 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User, Parti } = require('../../models');
 
 router.post('/user', async (req, res) => {
   try {
     const userData = await User.create(req.body);
 
     req.session.save(() => {
-      req.session.user_id = userData.id;
+      req.session.user_id = userData.user_id;
       req.session.logged_in = true;
 
       res.status(200).json(userData);
@@ -47,7 +47,19 @@ router.post('/login', async (req, res) => {
     res.status(400).json(err);
   }
 });
-
+router.post('/join', async(req,res) =>{
+  console.log(req.session.answer);
+  console.log(req.body.hel2)
+try {
+  const newParti = await Parti.create({
+    user_name:req.body.answer,
+    event_id:req.body.hel2
+  })
+  res.status(200).json(newParti)
+}catch (err){
+  res.status(400).json(err)
+}
+});
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
