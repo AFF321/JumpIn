@@ -86,6 +86,13 @@ body {
   padding: 20px;
 }
 
+.create {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 65%;
+}
 .page-title {
   text-align: center;
   background-color: rgb(214 179 23);
@@ -118,13 +125,16 @@ body {
   background-color: white;
   padding: 25px;
 }
-#eventDate {
+.drop-down {
   border: 1px solid #ced4da;
   padding: .375rem .75rem;
   border-radius: .25rem;
 }
-
-button{
+.inputs {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+button {
   width: 60px;
   display: flex;
   align-content: center;
