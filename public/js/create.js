@@ -1,20 +1,22 @@
 
     const createFormHandle = async (event) => {
         event.preventDefault();
+        const events = {};
 
-        const eventName = document.querySelector('#inputEventName').value.trim();
-        const hostName = document.querySelector('#inputHostName').value.trim();
-        const eventType = document.querySelector('#inputEventType').value;
-        const eventDate = document.querySelector('#eventDate').value;
-        const eventDescr = document.querySelector('#eventDescription').value.trim();
-        const address = document.querySelector('#inputStreetAddress').value.trim().toUpperCase();
-        const localeName = document.querySelector('#inputLocationName').value.trim();
-        const eventCity = document.querySelector('#inputCity').value.trim();
-        const eventState = document.querySelector('#inputState').value;
-        const eventZip = document.querySelector('#inputZip').value.trim();
+        events.event_name = document.querySelector('#inputEventName').value.trim();
+        events.host_name = document.querySelector('#inputHostName').value.trim();
+        events.type = document.querySelector('#inputEventType').value;
+        events.event_date = document.querySelector('#eventDate').value;
+        events.description = document.querySelector('#eventDescription').value.trim();
+        events.event_address = document.querySelector('#inputStreetAddress').value.trim().toUpperCase();
+        events.event_city = document.querySelector('#inputCity').value.trim();
+        events.event_state = document.querySelector('#inputState').value;
+        events.event_zip = document.querySelector('#inputZip').value.trim();
+        
         const inviteEmails = document.querySelector('#inputEmails').value.split(",");
 
-        // let inputs = []
+        console.log(inviteEmails);
+        
         // if(!eventName){
         //     alert('Please fill out Event Name field')
         // } else {
@@ -83,20 +85,16 @@
 
         // console.log(inputs)
 
-        console.log(eventName, hostName, eventType, eventDate, eventDescr, address, localeName, eventCity,eventState, eventZip, inviteEmails);
-
-        if(eventName && hostName && eventType && eventDescr && eventDate && address && eventCity && eventState && eventZip)
-       
         var response = await fetch('/api/event', {
             method: 'POST',
-            body: JSON.stringify({ event_name, host_name, type, description, event_date, event_address, event_city, event_state, event_zip}),
+            body: JSON.stringify(events),
             headers: { 'Content-Type': 'application/json' },
           });
       
           if (response.ok) {
             alert('Your Event has been created!')
           } else {
-              alert('failureeee')
+              alert('failedddd')
           }
     }
 
