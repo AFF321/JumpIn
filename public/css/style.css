@@ -61,7 +61,9 @@ body {
   align-items: flex-end;
  margin-left:80%;
 }
-
+#join-btn{
+  width: 25%;
+}
 .form-area {
   display: flex;
   background-color: rgb(155 211 205 / 62%);

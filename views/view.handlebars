@@ -1,6 +1,6 @@
 <h1>View Events</h1>
 
-
+{{#if logged_in}}
 <div class="container" style="width: 18rem;">
 {{#each events as |event|}}
 {{> view-details}}
@@ -12,4 +12,8 @@
     <a href="/" type ="submit" style="background-color: darkorange;">return home</a>
   </ul>
 </div>
+{{else}}
+<p> Please  <a href="/login">  LogIn to view events </a></p>
+{{/if}}
+
 
