@@ -96,3 +96,35 @@ body {
   padding: .375rem .75rem;
   border-radius: .25rem;
 }
+
+button{
+  width: 60px;
+  display: flex;
+  align-content: center;
+}
+
+
+h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.center{
+  text-align: center;
+}
+a .center{
+  text-decoration: none;
+}
+
+.card-img-top {
+  width: 18rem;
+
+}
+
+ul{
+  list-style-type:none ;
+}
+.card a header{
+  padding: 5px;
+} 
