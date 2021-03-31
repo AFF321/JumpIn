@@ -1,18 +1,25 @@
-<section class="event card card-body card-body-2">
+<section class="event card card-body card-body-2" style="margin: 0 auto;">
   <div class="event-details">
     <section id="event-title">
-    <h3>{{event.event_name}}</h3>
-    <p>By: {{event.host_name}}</p>
-    <p>Where: {{event.event_zip}} {{event.event_address}} , {{event.event_city}} ,{{event.evenmt_state}}</p>
-    <p>when: {{event.event_date}}</p>
+    <h3 class="eventName">{{event.event_name}}</h3>
+    <p style="text-decoration: underline;">Host:</p>
+    <p>{{event.host_name}}</p>
+    <p style="text-decoration: underline;">Where:</p>
+    <p>{{event.event_zip}} {{event.event_address}}  {{event.event_city}} ,{{event.event_state}}</p>
+    <p style="text-decoration: underline;">When:</p>
+    <p>{{event.event_date}}</p>
+    <p style="text-decoration: underline;">What's Happening There:</p>
     <p>{{event.description}}</p>
     </section>
 <section class="container"></section>
-<ol>
+<div class="partis">
+<h3 style="text-align: center;">Who's Joining?</h3>
+<ol style="margin: 0 auto;">
 {{#each event.partis as |parti|}}
 <li> {{parti.user_name}}</li>
 {{/each}}
 </ol>
+</div>
 {{#if logged_in}}
 <form id="joinevent">
   <input placeholder="enter name here" class="text form-input-2 form-input join-btn join"></input>
