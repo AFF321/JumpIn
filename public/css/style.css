@@ -17,6 +17,7 @@ body {
   font-size: 200px;
   box-shadow: inset;
 }
+
 .featured {
   display: flex;
   justify-content: center;
@@ -31,57 +32,66 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 .card-body-2{
   width: 1200px;
 }
+
 .card {
   border: none;
   margin: 10px;
   
 }
+
 .navbar {
   display: flex;
   justify-content: space-evenly;
 }
+
 .nav-links {
   color: black;
   text-decoration: none;
   
 }
+
 .nav-links:hover {
   font-size: 18px;
   color: rgb(221, 218, 218);
 }
+
 .main-navs {
   background-color: rgb(214 179 23);
   border: 2px solid rgb(214 179 23);
   border-radius: 100px;
   padding: 20px;
 }
+
 .main-navs:hover{
   color: rgb(221, 218, 218);
   background-color: #444141;
 }
+
 .join{
  margin-left:80%;
 }
+
 #join-btn{
   width: 200px;
 }
+
 .form-area {
   display: flex;
-  background-color: rgb(155 211 205 / 62%);
-  border-left: 5px solid #1c3334;
-  border-right: 5px solid #1c3334;
-  padding: 50px;
+  padding: 30px;
   justify-content: center;
 }
+
 .login-card {
   margin: 15px;
   padding: 15px;
-  color: rgb(221, 218, 218);
+  color: black;
   width: 50%;
 }
+
 .form-group {
   padding: 20px;
 }
@@ -93,53 +103,69 @@ body {
   flex-direction: column;
   width: 65%;
 }
+
 .page-title {
   text-align: center;
   background-color: rgb(214 179 23);
-  height: 25%;
+  padding: 30px;
   margin-bottom: 0;
+}
+
+.view-title {
+  background-color: rgb(214 179 23);
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  font-size: 28px;
 }
 
 .btn {
   background-color: #1c3334;
   width:fit-content
 }
+
 .form-input {
   width: 100%;
   border-radius: 3px;
   border: 1px solid #1c3334;
 }
+
 .form-input-2{
   width: 300px;
 }
+
 .form {
   background-color: white;
   color: black;
 }
 
 #event-title {
-  padding: 35px;
-    color: white;
+  padding: 30px;
+  color: white;
 }
+
 .event-form {
   background-color: white;
   padding: 25px;
 }
+
 .drop-down {
   border: 1px solid #ced4da;
   padding: .375rem .75rem;
   border-radius: .25rem;
 }
+
 .inputs {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
 button {
   width: 60px;
   display: flex;
   align-content: center;
 }
-
 
 h1{
   display: flex;
@@ -147,9 +173,11 @@ h1{
   justify-content: center;
   color: white;
 }
+
 .center{
   text-align: center;
 }
+
 a .center{
   text-decoration: none;
 }
@@ -164,6 +192,7 @@ a .center{
   text-align: center;
   font-size: 1.5rem;
 }
+
 .home-buttons{
   background-color: rgb(214 179 23);
 }
@@ -173,22 +202,45 @@ ul{
   text-align: center;
   
 }
+
 .card-2{
-  padding: 5px;
   background-color: #1c3334;
-  border: none;
   margin: 10px;
+  border: 1px solid rgb(214 179 23);
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
 } 
 
-
+.card-2:hover {
+ background-color: #2d3e50;
+ box-shadow: 1px 1px 1px whitesmoke;
+}
 
 .card-body-3{
-  width: 300px;
-  margin-left: 400px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .links{
   text-decoration: none;
   color:white;
+}
 
+.login-alert {
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+}
+
+.login-alert p {
+  font-size: 2rem;
+}
+
+.event-links:hover {
+  color: rgb(214 179 23);
+  text-decoration: none;
 }

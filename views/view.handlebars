@@ -15,15 +15,16 @@
 {{else}}
 <p> Please  <a href="/login">  LogIn to view events </a></p>
 {{/if}} --}}
-
+<div class="view-title" style="margin-bottom: 0;">
+<h5 style="font-size: 2rem;">View All Events Below</h5>
+</div>
 {{#if logged_in}}
-<div class="card-body card-body-3 card" style="">
+<div class="card-body card-body-3 card" style="margin-top: 0;">
    <ol>{{#each events as |event|}}
 {{> view-details}}
 {{/each}}
    </ol> 
   <div class="card-body">
-    <h5 class="card-title">View events</h5>
     
   <ul class="list-group list-group-flush">
     <li class={{event}}></li>
@@ -36,6 +37,8 @@
   </div>
 </div>
 {{else}}
+<div class="login-alert">
 <p> Please  <a href="/login">  LogIn to view events </a></p>
+</div>
 {{/if}}
   </div>
